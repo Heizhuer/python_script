@@ -13,5 +13,3 @@ while True:
         break
     except Exception:
         sleep(3)
-
-from collections import Counter
