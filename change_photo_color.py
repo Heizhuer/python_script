@@ -10,8 +10,8 @@ rmbg.remove_background_from_img_file(r'white.jpg')
 im = Image.open('white.jpg_no_bg.png')
 x, y = im.size
 
-p = Image.new('RGBA', im.size, (255, 0, 0))
-p.paste(im, (0, 0, x, y), im)
+p = Image.new(im.mode, im.size, 'red')
+p.paste(im, (0, 0), im)
 p.save('red.png')
 
 # 网址: https://www.remove.bg
