@@ -33,7 +33,7 @@ def cut_img(image):
             left = i*cut_width
             upper = j*cut_width
             right = (i + 1)*cut_width
-            lower = (j + i)*cut_width
+            lower = (j + 1)*cut_width
 
             box_list.append((left, upper, right, lower))
     # 通过剪裁获得每个小图片
